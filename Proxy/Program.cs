@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proxy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            IPage page = new ProxyPage();
+
+            Console.WriteLine("Call method display");
+
+            page.display();
+            page.display();
+        }
+    }
+}
